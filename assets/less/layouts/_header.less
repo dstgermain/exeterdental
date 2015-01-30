@@ -1,0 +1,72 @@
+@import (reference) "../_variables.less";
+
+.banner {
+  background: linear-gradient(to bottom, #d6d6d6 0%,#e5e5e5 30%,#e5e5e5 70%,#d6d6d6 100%);
+  margin-bottom: 0;
+  border: none;
+
+  .navbar-toggle {
+    background-color: #cccccc;
+  }
+
+  @media (min-width: 768px) {
+    height: 152px;
+    overflow: hidden;
+  }
+
+  .navbar-collapse {
+    @media (min-width: 768px) {
+      position: absolute;
+      bottom: -25px;
+      left: 0;
+
+      ul li {
+        margin-left: 5px;
+
+        &:first-of-type {
+          margin-left: 15px;
+        }
+      }
+
+      ul li a {
+        transition: all 500ms ease;
+      }
+
+      ul li.active a,
+      ul li.active a:hover,
+      ul li a:hover {
+        background-color: #ffffff !important;
+        background-color: rgba(242, 242, 242, 1) !important;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+        color: @brand-primary;
+      }
+    }
+  }
+
+  address {
+    margin: 25px 0 0 0;
+    text-align: right;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+
+    a {
+      color: #777777;
+    }
+
+    strong {
+      color: @brand-primary;
+      font-size: 1.1em;
+      text-shadow: 1px 1px 0 rgba(255,255,255,.8);
+    }
+  }
+
+  .aside {
+    margin-top: 102px;
+    height: 50px;
+    font-size: 1.8em;
+    font-weight: 600;
+    line-height: 49px;
+  }
+}
