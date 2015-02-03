@@ -5,19 +5,71 @@
   margin-bottom: 0;
   border: none;
 
+  .container {
+    position: relative;
+  }
+
+  img.header-logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 110%;
+
+    @media (max-width: 767px) {
+      position: absolute;
+      top: 5px;
+      bottom: auto;
+      left: 5px;
+      right: auto;
+      width: 135px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .navbar-collapse {
+      margin: 50px -15px 0;
+    }
+  }
+
   .navbar-toggle {
-    background-color: #cccccc;
+      background-color: transparent;
+      margin-right: 0;
+      border: 0;
+      border-left: 1px solid #ccc;
+      border-radius: 0;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      right: 0;
+      height: 50px;
+      margin: 0;
   }
 
   @media (min-width: 768px) {
     height: 152px;
     overflow: hidden;
+
+    .col-sm-9 {
+      position: static;
+    }
   }
 
   .navbar-collapse {
+    @media (max-width: 767px) {
+      .nav.navbar-nav {
+        margin-top: 0;
+      }
+      .nav.navbar-nav li {
+        border-top: 1px dotted #ffffff;
+      }
+      .nav.navbar-nav li.active a {
+        background: #ccc !important;
+      }
+    }
     @media (min-width: 768px) {
       position: absolute;
-      bottom: -25px;
+      margin-left: 25%;
+      bottom: 0px;
       left: 0;
 
       ul li {
@@ -44,8 +96,11 @@
   }
 
   address {
-    margin: 25px 0 0 0;
+    position: absolute;
+    right: 0;
+    top: 25px;
     text-align: right;
+    font-size: .8em;
 
     @media (max-width: 767px) {
       display: none;
@@ -66,7 +121,8 @@
     margin-top: 102px;
     height: 50px;
     font-size: 1.8em;
-    font-weight: 600;
-    line-height: 49px;
+    line-height: 54px;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
   }
 }

@@ -2,10 +2,12 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-3 hidden-xs aside">
+				<img src="/wp-content/themes/roots-master/assets/img/logo.svg" class="header-logo"/>
 				Our Office's
 			</div>
 			<div class="col-sm-9">
 				<div class="navbar-header">
+					<img src="/wp-content/themes/roots-master/assets/img/logo.svg" class="header-logo"/>
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
